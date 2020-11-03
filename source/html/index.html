@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <script src="https://widget.cloudpayments.ru/bundles/cloudpayments"></script>
+    <title>Payment</title>
+</head>
+<body>
+    <div class="app">
+        <h1 class="title">Благотворительный фонд</h1>
+        <form class="form">
+            <input type="text" id="name" placeholder="Введите ваше ФИО" required>
+            <input type="text" id="phone" placeholder="Введите ваш номер телефона" required>
+            <input type="text" id="good" placeholder="Введите название товара (пожертвования)" required>
+            <input type="number" id="amount" placeholder="Введите сумму в рублях" required pattern="[0-9]+">
+            <input type="email" id="mail" placeholder="Введите ваш e-mail" required>
+            <button type="submit">Перейти к оплате</button>
+        </form>
+    </div>
+
+    <div class="status"></div>
+    <script src="./js/main.min.js"></script>
+</body>
+</html>
